@@ -73,42 +73,6 @@ kraken.legs = 6
 
 
 
-function NflPlayer (name, age){
-this.team = 'colts';
-this.cityLocation = 'indianapolis';
-this.injuredList = false;
-this.name = name || '????';
-this.age = age || '????';
-
-
-this.injury = function(){
-this.injuredList = true;
-return name + ' is now injured!'
-}
-
-}
-
-var andrew = new NflPlayer ('Andrew Luck', 24);
-
-var reggie = new NflPlayer ('Reggie Wayne');
-
-var trent = new NflPlayer ('Trent Richardson');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
