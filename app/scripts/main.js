@@ -1,3 +1,18 @@
+console.log('First constructor is to see whether a musician is hireable based on if he is on tour')
+console.log('travis, justin, jkwon')
+console.log('travis.hireable()')
+
+console.log('Second constructor is a MusicVenue and is used to see whether there is a sound guy...')
+console.log('Jakes, TinRoof, Rue77')
+console.log('Rue77.nosound()')
+
+console.log('Pets')
+console.log('bernard')
+console.log('corrie')
+console.log('kraken')
+console.log('kraken.legs = 6')
+console.log('kraken.notmammal()')
+
 // Constructor One
 
 function Musician (name,genre) {
@@ -55,6 +70,11 @@ function Pet (name,type) {
 	this.legs = 4;
 	this.cute = true;
     this.type = type;
+
+    this.notmammal = function (){
+    this.mammal = false;
+    return name + ' is not a mammal';
+    }
 }
 
 var bernard = new Pet("bernard","dog")
@@ -62,8 +82,8 @@ var bernard = new Pet("bernard","dog")
 var corrie = new Pet("corrie","cat")
 
 var kraken = new Pet("kraken","butterfly")
-kraken.mammal = false
-kraken.legs = 6
+kraken.legs = 6;
+kraken.notmammal()
 
 
 
